@@ -9,19 +9,20 @@ int min=array[0];
 
 for (int i = 0; i < arrayLength; i++)
 {
-    array[i]= new Random().Next(100);
-    System.Console.Write(array[i]+ " ");
+     array[i]= new Random().Next(100);
+    System.Console.Write(array[i]);
+    if(i>max)
+{
+    i=max;
+}
 
-    if(array[i]>max)
-    {
-        array[i]==max;
-    }
-    else if(array[i]<min)
-    {
-        array[i]==min;
-    }
+if(i<min)
+{
+    i=min;
+}
 
 }
+
 System.Console.WriteLine();
 System.Console.WriteLine(max-min);
 
